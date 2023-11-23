@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 138, 10);
+    padding: 20px 50px;
+    position: relative;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.togglebutton{
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+.togglebutton .bar{
+    width: 37px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin:  3px 0;
+}
+.navlinks{
+    display: flex;
+    list-style: none;
+}
+.navlinks li{
+    margin-right: 25px;
+}
+.navlinks li a{
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.navlinks li a:hover{
+    color: crimson;
+}
+ @media screen and ( max-width: 768px){
+    .navbar{
+        padding: 20px 25px;
+    }
+    .navlinks{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background-color: rgb(216, 161, 83);
+        padding: 25px;
+        top: 100%;
+        left: 0;
+    }
+    .navlinks li{
+        padding: 12px 0;
+    }
+    .togglebutton{
+        display: flex;
+    }
+    .navlinks .active{
+        display: block;
+    }
+    background-color: rgb(238, 138, 10);
+}

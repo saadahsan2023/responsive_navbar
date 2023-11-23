@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="navbar">
+            <div class="logo">
+                <h1>NAVBAR</h1>
+            </div>
+            <div class="togglebutton" id="togglebutton">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="navlinks" id="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    
+         <script type="text/javascript">
+            const togglebutton = document.getElementById("togglebutton");
+            const navlinks = document.getElementById("navlinks");
+            togglebutton.addEventListener(' click' , ()=>{
+                navlinks.classList.toggle('active');
+            }
+            );
+
+         </script>
+</body>
+</html>
